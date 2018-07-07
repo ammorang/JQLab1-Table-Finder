@@ -1,0 +1,154 @@
+body {
+    background-color: #E1D7D4;
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 500;
+}
+
+/* Title Info */
+.head, .blah {
+    text-align: center;
+}
+
+.header {
+    color: #E34E45;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+.select {
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+
+/* Container with tables */
+.floorPlan {
+    background-color: #EEE;
+    height: 270px;
+    width: 280px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Each Table */
+.available  {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #CCC;
+    color: #EEE;
+    text-align: center;
+    font-size: .8em;
+    margin: 15px;
+    position: relative;
+    z-index: 2;
+    cursor: crosshair;
+    outline: none;
+}
+
+.reserved {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ADAAAA;
+    color: #EEE;
+    text-align: center;
+    font-size: .8em;
+    margin: 15px;
+    position: relative;
+    z-index: 2;
+    cursor: not-allowed;
+    outline: none; 
+}
+
+.available:hover {
+    background-color: white;
+}
+
+.reserved:hover {
+    background-color: #ADAAAA;
+}
+
+
+/* Form */
+
+.popup {
+    background-color: white;
+    height: 300px;
+    width: 310px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+    position: relative;
+    margin: auto;
+    bottom: 280px;
+    z-index: 3;
+    display: none;
+}
+
+
+h4 {
+    color: #E34E45;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    margin-left: 16px;
+    padding-top: 30px;
+}
+
+h6 {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 500;
+    margin-left: 16px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #EEE;
+    width: 270px;
+    font-size: 8px;
+    margin: 10px 15px;
+    padding-bottom: 7px;
+}
+
+.save {
+    width: 270px;
+    background-color: #008000;
+    color: white;
+    padding: 8px;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+    border: none;
+    outline: none;
+}
+
+.material-icons {
+    padding-top: 10px;
+    color: #CCC;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    width: 40px;
+    height: 20px;
+    background-color: #ADAAAA;
+    border: 2px solid black;  
+    z-index: 10000;  
+    overflow: auto;
+    position: absolute;
+}
+
+.visible {
+    visibility: hidden;
+}
